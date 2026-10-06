@@ -41,9 +41,9 @@ For a public repository:
 ```bash
 git clone https://github.com/isramunshi555-cloud/infinite-retina.git ~/infinite-retina
 sudo install -d -m 755 /var/www/infinite-retina
-sudo cp ~/infinite-retina/index.html /var/www/infinite-retina/
-sudo cp -r ~/infinite-retina/assets /var/www/infinite-retina/
-sudo cp ~/infinite-retina/deploy/nginx.conf /etc/nginx/sites-available/infinite-retina
+sudo cp ~/infinite-retina/infinite-retina/index.html /var/www/infinite-retina/
+sudo cp -r ~/infinite-retina/infinite-retina/assets /var/www/infinite-retina/
+sudo cp ~/infinite-retina/infinite-retina/deploy/nginx.conf /etc/nginx/sites-available/infinite-retina
 sudo ln -sfn /etc/nginx/sites-available/infinite-retina /etc/nginx/sites-enabled/infinite-retina
 sudo nginx -t
 sudo systemctl enable nginx
@@ -60,9 +60,21 @@ The public IP can change after stopping and starting an instance. For a stable U
 ```bash
 cd ~/infinite-retina
 git pull --ff-only
-sudo cp index.html /var/www/infinite-retina/
-sudo cp -r assets /var/www/infinite-retina/
+sudo cp infinite-retina/index.html /var/www/infinite-retina/
+sudo cp -r infinite-retina/assets /var/www/infinite-retina/
 ```
 
+## Design update
+- Seven coordinated service accent colours with navy, ivory, lavender and mint surfaces.
+- Interactive service constellation and seven custom concept SVG illustrations.
+- Service content, colours, illustration and suggested flow update together.
+- Four interactive process stages with service-specific activities, inputs and proposed outputs.
+- Keyboard navigation and reduced-motion support.
+- All original services, FAQs and project-brief features retained.
+
+## Deployment status
+The original site was deployed on AWS at https://16.171.39.126 with a trusted IP certificate, scheduled Certbot renewal and an Nginx reload hook. The design update requires pulling the latest source and copying the HTML and assets with the update commands above. Do not replace the existing HTTPS Nginx configuration with the original HTTP example in deploy/nginx.conf.
+
 ## Validation
-JavaScript syntax and reference service coverage were checked. Browser visual testing and AWS deployment have not yet been performed.
+JavaScript syntax, seven service renderings, all 28 service/process combinations, and brief generation passed local checks. Visual browser testing of the design update remains to be done.
+
